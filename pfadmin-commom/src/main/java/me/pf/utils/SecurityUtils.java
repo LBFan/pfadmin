@@ -25,9 +25,10 @@ public class SecurityUtils {
 
     /**
      * 获取系统用户名称
+     *
      * @return 系统用户名称
      */
-    public static String getUsername(){
+    public static String getUsername() {
         Object obj = getUserDetails();
         JSONObject json = new JSONObject(obj);
         return json.get("username", String.class);
@@ -35,9 +36,10 @@ public class SecurityUtils {
 
     /**
      * 获取系统用户id
+     *
      * @return 系统用户id
      */
-    public static Long getUserId(){
+    public static Long getUserId() {
         Object obj = getUserDetails();
         JSONObject json = new JSONObject(obj);
         return json.get("id", Long.class);

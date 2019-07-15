@@ -20,6 +20,7 @@ public class QueryHelp {
 
     /**
      * 转换为Predicate
+     *
      * @param root
      * @param query
      * @param cb

@@ -18,6 +18,7 @@ public class EncryptUtils {
 
     /**
      * 对称加密
+     *
      * @param source
      * @return
      * @throws Exception
@@ -52,12 +53,13 @@ public class EncryptUtils {
 
     /**
      * 对称解密
+     *
      * @param source
      * @return
      * @throws Exception
      */
     public static String desDecrypt(String source) throws Exception {
-        if (source == null || source.length() == 0){
+        if (source == null || source.length() == 0) {
             return null;
         }
         byte[] src = hex2byte(source.getBytes());
@@ -72,7 +74,7 @@ public class EncryptUtils {
     }
 
     private static byte[] hex2byte(byte[] b) {
-        if ((b.length % 2) != 0){
+        if ((b.length % 2) != 0) {
             throw new IllegalArgumentException("长度不是偶数");
         }
         byte[] b2 = new byte[b.length / 2];

@@ -3,6 +3,7 @@ package me.pf.swagger2;
 import com.fasterxml.classmate.TypeResolver;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
@@ -16,7 +17,7 @@ import static com.google.common.collect.Lists.newArrayList;
 import static springfox.documentation.schema.AlternateTypeRules.newRule;
 
 /**
- *  将Pageable转换展示在swagger中
+ * 将Pageable转换展示在swagger中
  */
 @Configuration
 public class SwaggerDataConfig {

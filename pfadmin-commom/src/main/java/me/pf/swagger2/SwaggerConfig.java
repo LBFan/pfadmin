@@ -55,8 +55,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("eladmin 接口文档")
-                .version("2.1")
+                .title("pfadmin 接口文档")
+                .version("0.0.1-SNAPSHOT")
                 .build();
     }
 }
