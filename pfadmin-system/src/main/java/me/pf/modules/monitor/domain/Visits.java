@@ -1,0 +1,39 @@
+package me.pf.modules.monitor.domain;
+
+import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+
+import javax.persistence.*;
+import java.sql.Timestamp;
+
+/**
+ * @author :  PF_23
+ * @Description pv 与 ip 统计
+ * @date : 2019/16/07.
+ */
+@Entity
+@Data
+@Table(name = "visits")
+public class Visits {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(unique = true)
+    private String date;
+
+    @Column(name = "pv_counts")
+    private Long pvCounts;
+
+    @Column(name = "ip_counts")
+    private Long ipCounts;
+
+    @CreationTimestamp
+    @Column(name = "create_time")
+    private Timestamp createTime;
+
+    @Column(name = "week_day")
+    private String weekDay;
+}
+

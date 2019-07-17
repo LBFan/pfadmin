@@ -1,5 +1,7 @@
 package me.pf.utils;
 
+import org.springframework.util.DigestUtils;
+
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
@@ -85,4 +87,12 @@ public class EncryptUtils {
         return b2;
     }
 
+    /**
+     * 密码加密
+     * @param password
+     * @return
+     */
+    public static String encryptPassword(String password){
+        return  DigestUtils.md5DigestAsHex(password.getBytes());
+    }
 }

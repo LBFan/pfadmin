@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>eladmin-common</module>
-        <module>eladmin-generator</module>
-        <module>eladmin-logging</module>
-        <module>eladmin-system</module>
-        <module>eladmin-tools</module>
+        <module>pfadmin-commom</module>
+        <module>pfadmin-generator</module>
+        <module>pfadmin-logging</module>
+        <module>pfadmin-system</module>
+        <module>pfadmin-tools</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -21,7 +21,7 @@
     <name>pfadmin</name>
     <packaging>pom</packaging>
 
-    <description>仿写el-admin后台管理系统</description>
+    <description>仿写el-admin后台的管理系统</description>
 
 
     <properties>
