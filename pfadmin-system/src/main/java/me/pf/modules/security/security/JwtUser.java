@@ -2,7 +2,7 @@ package me.pf.modules.security.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * @Description
  * @date : 2019/16/07.
  */
-@Getter
+@Data
 @AllArgsConstructor
 public class JwtUser implements UserDetails {
 
