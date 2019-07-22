@@ -2,7 +2,7 @@ package me.pf.utils;
 
 /**
  * 常用静态常量
- * Created by : PF
+ * @author : PF_23
  * Date on : 2019-07-11.
  */
 
